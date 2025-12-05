@@ -14,19 +14,17 @@ Lending Club operates as America's largest peer-to-peer lending marketplace, con
 - **Source:** Lending Club company (historical real world data) 
 - **Size:** 1.35M records across 3 normalized tables
 
--1,347,721 loans analyzed across 14 segments (7 grades × 2 terms)
-&&& $3.17B total profit generated
-16.3% average ROI with 29.7% default rate
+-1,347,721 loans analyzed across 14 segments (7 grades × 2 terms) $3.17B total profit generated 16.3% average ROI with 29.7% default rate
 
   <img width="856" height="476" alt="image" src="https://github.com/user-attachments/assets/19aa0d00-0798-401b-b671-ef23411d2b56" />
-## Key Insights
- **Portfolio Performance & Opportunities**
+### Key Insights
 
+**Portfolio Performance & Opportunities** 
 Portfolio exhibits significant term structure imbalance. Extended-term products (60 months) generate 183% higher profit per loan ($4,626 vs $1,632) yet represent only 24% of origination volume. This structural underweight in high-performing segments suggests potential value creation of $700M+ through strategic rebalancing.
 The top tier—60-month loans—consistently delivers $4,000-$5,200 profit per loan. The bottom tier—36-month loans—clusters around $800-$2,000. Yet 76% of capital flows to the lower-performing tier.
 Grade B-C borrowers at 60-month terms emerge as clear winners: $5,000+ profit per loan, 25%+ returns, proven volume of 153K loans. One segment stands out negatively: Grade G-36m loses $662 per loan. While small in absolute volume, it represents systematic value destruction.
 
- **Insights Deep-Dive**
+**Insights Deep-Dive**
 60-month loans average $4,626 profit with 323,492 originations, representing 24% of portfolio volume.
 36-month loans average $1,632 profit with 1,024,229 originations, representing 76% of portfolio volume.
 All seven risk grades perform 150-200% better at 60-month term, indicating systematic underweighting rather than segment-specific anomaly.
