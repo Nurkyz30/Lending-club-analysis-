@@ -15,6 +15,38 @@ Lending Club operates as America's largest peer-to-peer lending marketplace, con
 - **Source:** Lending Club company (historical real world data) 
 - **Size:** 1.35M records across 3 normalized tables
 
+## Data Quality & Cleaning
+
+### Raw Dataset Challenges
+
+**Initial Size**: 2.26M loan records (151 columns)  
+**Key Issues**:
+- Missing values: employment (5.8%), program-specific fields (98%+)
+- Mixed statuses: 40% in-progress loans (Current/Late) excluded from analysis
+- Data quality: Invalid DTI values (>100%, negative), extreme income outliers
+- Format inconsistencies: Multiple loan status categories requiring standardization
+
+### Cleaning Process
+
+1. **Status Filtering**: Extracted 1.35M completed loans (Good/Bad outcome only)
+2. **Feature Selection**: Reduced to 30 key features from 151 columns
+3. **Missing Values**: 
+   - Dropped 378 records (<0.03%) with critical field gaps (DTI, income)
+   - Imputed non-critical: emp_length→"Unknown", credit fields→median/0
+4. **Validation**: Removed invalid DTI (>100%), standardized date formats
+
+### Final Dataset
+
+**Records**: 1,347,721 completed loans (2007-2018)  
+**Default Rate**: 19.98% (269,360 charged off)  
+**Quality**: No missing critical values, validated ranges, consistent formats
+
+*Cleaning retained 59.6% of original data, excluding in-progress loans 
+and invalid records. See [notebook](notebooks/01_exploration_analysis.ipynb) 
+for full pipeline.*
+
+---
+
   <img width="842" height="472" alt="image" src="https://github.com/user-attachments/assets/d287b00e-bb24-49e0-8478-8ce3057c1af9" />
 
 - 1,347,721 loans analyzed across 14 segments (7 grades × 2 terms)
