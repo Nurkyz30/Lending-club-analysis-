@@ -42,7 +42,7 @@ Lending Club operates as America's largest peer-to-peer lending marketplace, con
 **Quality**: No missing critical values, validated ranges, consistent formats
 
 *Cleaning retained 59.6% of original data, excluding in-progress loans 
-and invalid records. See [notebook](notebooks/01_exploration_analysis.ipynb) 
+and invalid records. See [notebook](https://github.com/Nurkyz30/Lending-Club---Fintech-loan-portfolio-optimization-/blob/main/01_data_exploration.ipynb)
 for full pipeline.*
 
 ---
